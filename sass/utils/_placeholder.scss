@@ -3,3 +3,11 @@
 line-height: 1.17;
 letter-spacing: 0.02em;
 }
+
+%btn{
+    border:none;
+    border-radius: 4px;
+    background-color: var(--accent-color);
+    color: var(--secondary-text-color);
+
+}
