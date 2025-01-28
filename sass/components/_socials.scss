@@ -11,6 +11,9 @@
   width: 44px;
   height: 44px;
   border-radius: 50%;
+}
+
+.socials__link--light {
   background-color: #ffffff;
   transition: background-color var(--transition-time-and-function);
   &:hover,
@@ -19,11 +22,24 @@
   }
 }
 
-.socials__icon{
-    fill: var(--icons-main-color);
+.socials__link--dark {
+  background-color: #ffffff1a;
+  transition: background-color var(--transition-time-and-function);
+  &:hover,
+  &:focus {
+    background-color: var(--accent-color);
+  }
+}
 
-    .socials__link:hover &,
-    .socials__link:focus &{
-        fill: #ffffff;
-    }
+.socials__icon--dark {
+  fill: var(--icons-main-color);
+
+  .socials__link--light:hover &,
+  .socials__link--light:focus & {
+    fill: #ffffff;
+  }
+}
+
+.socials__icon--light {
+  fill: #ffffff;
 }

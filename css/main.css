@@ -12,7 +12,7 @@
   --transition-time-and-function: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.btn-order {
+.subscribe__btn-submit, .btn-order {
   border: none;
   border-radius: 4px;
   background-color: var(--accent-color);
@@ -234,6 +234,7 @@ ol {
 }
 
 .section__title {
+  margin-bottom: 30px;
   font-size: 28px;
   font-weight: 700;
   line-height: 1.8;
@@ -265,18 +266,34 @@ ol {
   width: 44px;
   height: 44px;
   border-radius: 50%;
+}
+
+.socials__link--light {
   background-color: #ffffff;
   -webkit-transition: background-color var(--transition-time-and-function);
   transition: background-color var(--transition-time-and-function);
 }
-.socials__link:hover, .socials__link:focus {
+.socials__link--light:hover, .socials__link--light:focus {
   background-color: var(--accent-color);
 }
 
-.socials__icon {
+.socials__link--dark {
+  background-color: rgba(255, 255, 255, 0.1019607843);
+  -webkit-transition: background-color var(--transition-time-and-function);
+  transition: background-color var(--transition-time-and-function);
+}
+.socials__link--dark:hover, .socials__link--dark:focus {
+  background-color: var(--accent-color);
+}
+
+.socials__icon--dark {
   fill: var(--icons-main-color);
 }
-.socials__link:hover .socials__icon, .socials__link:focus .socials__icon {
+.socials__link--light:hover .socials__icon--dark, .socials__link--light:focus .socials__icon--dark {
+  fill: #ffffff;
+}
+
+.socials__icon--light {
   fill: #ffffff;
 }
 
@@ -295,6 +312,10 @@ ol {
 .header__logo {
   padding-top: 16px;
   padding-bottom: 16px;
+}
+
+.header__logo--black {
+  color: var(--title-color);
 }
 
 .mobile-menu__btn-open {
@@ -467,4 +488,129 @@ ol {
 }
 .clients__link:hover .clients__icon, .clients__link:focus .clients__icon {
   fill: var(--accent-color);
+}
+
+.footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background-color: #2f303a;
+  text-align: center;
+}
+
+.footer__logo {
+  margin-bottom: 20px;
+}
+
+.footer__logo--white {
+  color: var(--secondary-text-color);
+}
+
+.address {
+  margin-bottom: 60px;
+}
+
+.address__item:not(:last-child) {
+  margin-bottom: 8px;
+}
+
+.address__link {
+  font-size: 14px;
+  line-height: 1.7;
+  letter-spacing: 0.03em;
+}
+
+.address__link--location {
+  color: var(--secondary-text-color);
+}
+
+.address__link--contact {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.join {
+  margin-bottom: 60px;
+}
+
+.join__title {
+  margin-bottom: 20px;
+  font-weight: 700;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  text-align: center;
+  color: var(--secondary-text-color);
+}
+
+.subscribe {
+  text-align: center;
+}
+
+.subscribe__title {
+  margin-bottom: 20px;
+  font-weight: 700;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  text-align: center;
+  color: var(--secondary-text-color);
+}
+
+.subscribe__label {
+  display: block;
+  margin-bottom: 20px;
+}
+
+.subscribe__input {
+  display: block;
+  width: 100%;
+  padding: 15px 16px;
+  border: 1px solid rgba(255, 255, 255, 0.3019607843);
+  border-radius: 4px;
+  background-color: transparent;
+}
+.subscribe__input::-webkit-input-placeholder {
+  font-size: 16px;
+  line-height: 1.25;
+  letter-spacing: 0.03em;
+}
+.subscribe__input::-moz-placeholder {
+  font-size: 16px;
+  line-height: 1.25;
+  letter-spacing: 0.03em;
+}
+.subscribe__input:-ms-input-placeholder {
+  font-size: 16px;
+  line-height: 1.25;
+  letter-spacing: 0.03em;
+}
+.subscribe__input::-ms-input-placeholder {
+  font-size: 16px;
+  line-height: 1.25;
+  letter-spacing: 0.03em;
+}
+.subscribe__input::placeholder {
+  font-size: 16px;
+  line-height: 1.25;
+  letter-spacing: 0.03em;
+}
+
+.subscribe__btn-submit {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 200px;
+  height: 50px;
+  margin-right: auto;
+  margin-left: auto;
+  padding: 10px 30px;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.86;
+  letter-spacing: 0.06em;
 }/*# sourceMappingURL=main.css.map */

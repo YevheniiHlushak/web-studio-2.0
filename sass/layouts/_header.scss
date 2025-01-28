@@ -5,10 +5,13 @@
 }
 
 .header__logo{
- 
     padding-top: 16px;
     padding-bottom: 16px;
 }
+
+.header__logo--black {
+    color: var(--title-color);
+  }
 
 .mobile-menu__btn-open {
     width: 40px;
