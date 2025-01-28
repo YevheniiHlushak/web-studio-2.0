@@ -387,6 +387,10 @@ ol {
   letter-spacing: 0.03em;
 }
 
+.team {
+  background-color: #F5F4FA;
+}
+
 .team__list {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -420,4 +424,47 @@ ol {
   margin-bottom: 16px;
   font-size: 16px;
   letter-spacing: 0.03em;
+}
+
+.clients__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 30px;
+}
+
+.clients__item {
+  -ms-flex-preferred-size: calc((100% - 30px) / 2);
+      flex-basis: calc((100% - 30px) / 2);
+}
+
+.clients__link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 92px;
+  border: 1px solid var(--icons-main-color);
+  border-radius: 4px;
+  -webkit-transition: border-color var(--transition-time-and-function);
+  transition: border-color var(--transition-time-and-function);
+}
+.clients__link:hover, .clients__link:focus {
+  border-color: var(--accent-color);
+}
+
+.clients__icon {
+  fill: var(--icons-main-color);
+  -webkit-transition: fill var(--transition-time-and-function);
+  transition: fill var(--transition-time-and-function);
+}
+.clients__link:hover .clients__icon, .clients__link:focus .clients__icon {
+  fill: var(--accent-color);
 }/*# sourceMappingURL=main.css.map */
