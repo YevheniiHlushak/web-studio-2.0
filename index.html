@@ -520,11 +520,106 @@
           /></label>
           <button class="subscribe__btn-submit" type="sumbit">
             Підписатися
-            <svg width="24" height="24"><use href="images/icons.svg#icon-send"></use></svg>
+            <svg width="24" height="24">
+              <use href="images/icons.svg#icon-send"></use>
+            </svg>
           </button>
         </div>
         <!--  -->
       </div>
     </footer>
+
+    <!-- modal window -->
+
+    <div class="backdrop">
+      <div class="modal-window">
+        <button class="modal-window__btn-close" type="button">
+          <svg width="18" height="18">
+            <use
+              class="btn-close__icon"
+              href="./images/icons.svg#icon-close"
+            ></use>
+          </svg>
+        </button>
+        <!-- form -->
+        <form class="form" autocomplete="off">
+          <p class="form__titel">Залиште ваші дані і ми вам перетелефонуємо</p>
+          <!-- name -->
+          <label for="name" class="form__label">Ім'я</label>
+          <div class="form__field">
+            <input
+              type="text"
+              class="form__input"
+              id="name"
+              name="user-name"
+              title="Іван Іванович"
+              required
+            />
+            <svg width="18" height="18" class="form__icon">
+              <use href="./images/icons.svg#icon-person"></use>
+            </svg>
+          </div>
+          <!-- phone -->
+          <label for="phone" class="form__label">Телефон</label>
+          <div class="form__field">
+            <input
+              type="tel"
+              class="form__input"
+              id="phone"
+              name="user-phone"
+              title="0961111111"
+              required
+            />
+            <svg width="18" height="18" class="form__icon">
+              <use href="./images/icons.svg#icon-phone"></use>
+            </svg>
+          </div>
+          <!-- email -->
+          <label for="email" class="form__label">Пошта</label>
+          <div class="form__field">
+            <input
+              type="email"
+              class="form__input"
+              id="email"
+              name="user-email"
+              title="user@email.com"
+              required
+            />
+            <svg width="18" height="18" class="form__icon">
+              <use href="./images/icons.svg#icon-email"></use>
+            </svg>
+          </div>
+          <!-- message -->
+          <label for="message" class="form__label">Коментар</label>
+          <textarea
+            class="form__input--message"
+            id="message"
+            name="user-message"
+            placeholder="Введіть текст"
+          ></textarea>
+          <!-- checkbox -->
+          <label class="form__accept"
+            ><input
+              type="checkbox"
+              class="form__origin-checkbox visually-hidden"
+            />
+            <svg class="form__custom-checkbox">
+              <use
+                class="custom__checkbox-icon"
+                href="./images/icons.svg#icon-check"
+              ></use>
+            </svg>
+            <span class="form__accept-text"
+              >Погоджуюся з розсилкою та приймаю &nbsp<a
+                href="#"
+                class="form__accept-link"
+                >Умови договору</a
+              ></span
+            >
+          </label>
+          <button class="form__btn-submit" type="submit">Відправити</button>
+        </form>
+      </div>
+    </div>
   </body>
 </html>
