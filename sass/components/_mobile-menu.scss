@@ -2,7 +2,7 @@
   display: block;
   position: fixed;
   top: 0;
-  left: 0;
+  left: 100%;
   z-index: 100;
   width: 100%;
   height: 100%;
@@ -10,13 +10,16 @@
   opacity: 0;
   pointer-events: none;
   background-color: rgba(0, 0, 0, 0.2);
-
+  transition: opacity var(--transition-time-and-function),
+    visibility var(--transition-time-and-function),
+    transform var(--transition-time-and-function);
 }
 
 .is-open {
   visibility: visible;
   opacity: 1;
   pointer-events: auto;
+  transform: translateX(-100%);
 }
 
 .mobile-menu {
@@ -41,7 +44,7 @@
   border: none;
   transition: fill var(--transition-time-and-function);
   &:hover,
-  &:focus{
+  &:focus {
     fill: var(--accent-color);
   }
 }
@@ -61,7 +64,7 @@
   transition: color var(--transition-time-and-function);
 
   &:hover,
-  &:focus{
+  &:focus {
     color: var(--accent-color);
   }
 }
@@ -84,7 +87,6 @@
   line-height: 1.176;
   letter-spacing: 0.02em;
   color: var(--accent-color);
- 
 }
 
 .mobile-contacts__link-email {
@@ -96,7 +98,7 @@
   color: var(--main-text-color);
   transition: color var(--transition-time-and-function);
   &:hover,
-  &:focus{
+  &:focus {
     color: var(--accent-color);
   }
 }

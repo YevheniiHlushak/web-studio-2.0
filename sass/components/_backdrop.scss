@@ -1,3 +1,11 @@
+
+.is-hidden {
+  visibility: hidden;
+  opacity: 0;
+  pointer-events: none;
+  transform: scale(0, 0);
+}
+
 .backdrop {
   position: fixed;
   top: 0;
@@ -8,4 +16,7 @@
   overflow-y: scroll;
   background-color: #00000033;
 
+  transition: opacity var(--transition-time-and-function),
+    transform var(--transition-time-and-function),
+    visibility var(--transition-time-and-function);
 }
