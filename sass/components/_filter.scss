@@ -1,0 +1,20 @@
+.filter__list {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 8px;
+  row-gap: 15px;
+  margin-bottom: 40px;
+}
+
+.filter__btn {
+  @extend %btn-form;
+  padding: 6px 22px;
+  font-weight: 500;
+  line-height: 1.62;
+  letter-spacing: 0.03em;
+  background-color: #f5f4fa;
+
+  &.filter__btn--current {
+    @extend %btn-accent;
+  }
+}
