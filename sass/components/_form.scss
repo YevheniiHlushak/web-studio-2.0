@@ -120,7 +120,8 @@
 }
 
 .form__btn-submit {
-  @extend %btn;
+  @extend %btn-form;
+  @extend %btn-accent;
   display: block;
   margin-right: auto;
   margin-left: auto;

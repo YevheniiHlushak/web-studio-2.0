@@ -25,11 +25,9 @@
 }
 
 .btn-order {
-  @extend %btn;
+  @extend %btn-form;
+  @extend %btn-accent;
   padding: 10px 24px;
-  font-size: 16px;
-  font-weight: 700;
   line-height: 1.88;
-  letter-spacing: 0.06em;
   box-shadow: 0px 4px 4px 0px #00000026;
 }
